@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <Notecard.h>
 
 // Compile Time Feature Flags
 // USE_NOTECARD: bool: send json requests to the notecard
