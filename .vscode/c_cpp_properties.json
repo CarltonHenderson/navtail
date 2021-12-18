@@ -42,6 +42,8 @@
                 "/home/dreadflint/.arduino15/packages/adafruit/hardware/nrf52/0.20.1/cores/nRF5/TinyUSB/Adafruit_TinyUSB_ArduinoCore/tinyusb/src",
                 "/home/dreadflint/.arduino15/packages/adafruit/hardware/nrf52/0.20.1/cores/nRF5",
                 "/home/dreadflint/.arduino15/packages/adafruit/hardware/nrf52/0.20.1/variants/feather_nrf52840_express",
+                "/home/dreadflint/Arduino/libraries/Blues_Wireless_Notecard/src",
+                "/home/dreadflint/.arduino15/packages/adafruit/hardware/nrf52/0.20.1/libraries/Wire",
                 "/home/dreadflint/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1",
                 "/home/dreadflint/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/arm-none-eabi",
                 "/home/dreadflint/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/7-2017q4/arm-none-eabi/include/c++/7.2.1/backward",
