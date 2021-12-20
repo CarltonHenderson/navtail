@@ -1,16 +1,17 @@
 EESchema Schematic File Version 4
+LIBS:mainboard-cache
 EELAYER 26 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Nav-Tail Communicator"
-Date "2021-12-18"
-Rev "0.1.0"
+Date "2021-12-20"
+Rev "0.2.0"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
+Comment3 "Ethan's Comments"
 Comment4 "Dreadflint"
 $EndDescr
 $Comp
@@ -22,7 +23,7 @@ F 1 "LED" H 1642 5136 50  0000 C CNN
 F 2 "" H 1650 5300 50  0001 C CNN
 F 3 "~" H 1650 5300 50  0001 C CNN
 	1    1650 5300
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED DYEL1
@@ -33,7 +34,7 @@ F 1 "LED" H 1642 5536 50  0000 C CNN
 F 2 "" H 1650 5700 50  0001 C CNN
 F 3 "~" H 1650 5700 50  0001 C CNN
 	1    1650 5700
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED DBLU1
@@ -44,7 +45,7 @@ F 1 "LED" H 1642 6336 50  0000 C CNN
 F 2 "" H 1650 6500 50  0001 C CNN
 F 3 "~" H 1650 6500 50  0001 C CNN
 	1    1650 6500
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED DGRN1
@@ -55,7 +56,7 @@ F 1 "LED" H 1642 5936 50  0000 C CNN
 F 2 "" H 1650 6100 50  0001 C CNN
 F 3 "~" H 1650 6100 50  0001 C CNN
 	1    1650 6100
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED DERR1
@@ -66,7 +67,7 @@ F 1 "LED" H 1642 6736 50  0000 C CNN
 F 2 "" H 1650 6900 50  0001 C CNN
 F 3 "~" H 1650 6900 50  0001 C CNN
 	1    1650 6900
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
@@ -124,11 +125,9 @@ F 3 "~" H 1200 5300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4650 2850 1800 2850
+	4650 2850 2200 2850
 Wire Wire Line
-	1800 2850 1800 5300
-Wire Wire Line
-	4650 2950 1900 2950
+	4650 2950 2300 2950
 Wire Wire Line
 	1500 6900 1350 6900
 Wire Wire Line
@@ -232,20 +231,20 @@ Wire Wire Line
 Wire Wire Line
 	6300 3750 6300 3150
 Wire Wire Line
-	6300 3150 7350 3150
+	6300 3150 7000 3150
 Wire Wire Line
-	7350 2750 6200 2750
+	7350 2750 7300 2750
 Wire Wire Line
 	6200 3650 5650 3650
 $Comp
 L power:GND #PWR0103
 U 1 1 61BF33A5
-P 7750 4100
-F 0 "#PWR0103" H 7750 3850 50  0001 C CNN
-F 1 "GND" H 7755 3927 50  0000 C CNN
-F 2 "" H 7750 4100 50  0001 C CNN
-F 3 "" H 7750 4100 50  0001 C CNN
-	1    7750 4100
+P 8150 4100
+F 0 "#PWR0103" H 8150 3850 50  0001 C CNN
+F 1 "GND" H 8155 3927 50  0000 C CNN
+F 2 "" H 8150 4100 50  0001 C CNN
+F 3 "" H 8150 4100 50  0001 C CNN
+	1    8150 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -402,7 +401,7 @@ Wire Wire Line
 Wire Wire Line
 	6400 3850 6400 3550
 Wire Wire Line
-	6400 3550 7350 3550
+	6400 3550 7000 3550
 $Comp
 L power:+BATT #PWR0106
 U 1 1 61C932F8
@@ -442,49 +441,38 @@ Wire Wire Line
 Wire Wire Line
 	3400 4250 4650 4250
 Wire Wire Line
-	3500 3350 4650 3350
+	3500 3350 3950 3350
 Wire Wire Line
 	4500 3450 4500 5450
 Connection ~ 1050 6900
 Wire Wire Line
 	1050 6900 1050 7200
 Wire Wire Line
-	7750 2750 7750 3150
-Connection ~ 7750 3150
+	2400 3050 2400 6100
 Wire Wire Line
-	7750 3150 7750 3550
-Connection ~ 7750 3550
+	2400 6100 1800 6100
 Wire Wire Line
-	7750 3550 7750 3950
-Connection ~ 7750 3950
+	2400 3050 4650 3050
 Wire Wire Line
-	7750 3950 7750 4100
+	2500 6500 2500 3150
 Wire Wire Line
-	2000 3050 2000 6100
+	2500 3150 4650 3150
 Wire Wire Line
-	2000 6100 1800 6100
+	1800 6500 2500 6500
 Wire Wire Line
-	2000 3050 4650 3050
+	4650 3250 2600 3250
 Wire Wire Line
-	2100 6500 2100 3150
+	2600 3250 2600 6900
 Wire Wire Line
-	2100 3150 4650 3150
+	2600 6900 1800 6900
 Wire Wire Line
-	1800 6500 2100 6500
+	2300 2950 2300 5700
 Wire Wire Line
-	4650 3250 2200 3250
-Wire Wire Line
-	2200 3250 2200 6900
-Wire Wire Line
-	2200 6900 1800 6900
-Wire Wire Line
-	1900 2950 1900 5700
-Wire Wire Line
-	1900 5700 1800 5700
+	2300 5700 1800 5700
 Wire Wire Line
 	6200 2750 6200 3650
 Wire Wire Line
-	5650 3950 7350 3950
+	5650 3950 7000 3950
 Wire Wire Line
 	4150 1950 4150 1900
 $Comp
@@ -559,4 +547,154 @@ Wire Wire Line
 	6000 3150 5650 3150
 Wire Wire Line
 	6000 1250 6000 3150
+Wire Wire Line
+	1800 5300 2200 5300
+Wire Wire Line
+	2200 5300 2200 2850
+Text Notes 7900 5100 0    50   ~ 0
+Ethan:
+Text Notes 7950 5300 0    50   ~ 0
+Feather EN usually turns off MCU
+$Comp
+L Device:R R?
+U 1 1 61C1679A
+P 3950 3500
+F 0 "R?" H 4020 3546 50  0000 L CNN
+F 1 "R" H 4020 3455 50  0000 L CNN
+F 2 "" V 3880 3500 50  0001 C CNN
+F 3 "~" H 3950 3500 50  0001 C CNN
+	1    3950 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 3350
+Wire Wire Line
+	3950 3350 4650 3350
+$Comp
+L power:GND #PWR?
+U 1 1 61C1688E
+P 3950 3650
+F 0 "#PWR?" H 3950 3400 50  0001 C CNN
+F 1 "GND" H 3955 3477 50  0000 C CNN
+F 2 "" H 3950 3650 50  0001 C CNN
+F 3 "" H 3950 3650 50  0001 C CNN
+	1    3950 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61C168E5
+P 7150 3950
+F 0 "R?" V 6943 3950 50  0000 C CNN
+F 1 "R" V 7034 3950 50  0000 C CNN
+F 2 "" V 7080 3950 50  0001 C CNN
+F 3 "~" H 7150 3950 50  0001 C CNN
+	1    7150 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3950 7350 3950
+$Comp
+L Device:R R?
+U 1 1 61C16A13
+P 7150 3550
+F 0 "R?" V 6943 3550 50  0000 C CNN
+F 1 "R" V 7034 3550 50  0000 C CNN
+F 2 "" V 7080 3550 50  0001 C CNN
+F 3 "~" H 7150 3550 50  0001 C CNN
+	1    7150 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3550 7350 3550
+$Comp
+L Device:R R?
+U 1 1 61C16A63
+P 7150 3150
+F 0 "R?" V 6943 3150 50  0000 C CNN
+F 1 "R" V 7034 3150 50  0000 C CNN
+F 2 "" V 7080 3150 50  0001 C CNN
+F 3 "~" H 7150 3150 50  0001 C CNN
+	1    7150 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3150 7350 3150
+$Comp
+L Device:R R?
+U 1 1 61C16AB1
+P 7150 2750
+F 0 "R?" V 6943 2750 50  0000 C CNN
+F 1 "R" V 7034 2750 50  0000 C CNN
+F 2 "" V 7080 2750 50  0001 C CNN
+F 3 "~" H 7150 2750 50  0001 C CNN
+	1    7150 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 2750 6750 2750
+Wire Wire Line
+	7750 2750 8150 2750
+Wire Wire Line
+	8150 2750 8150 3150
+Wire Wire Line
+	7750 3150 8150 3150
+Connection ~ 8150 3150
+Wire Wire Line
+	8150 3150 8150 3550
+Wire Wire Line
+	7750 3550 8150 3550
+Connection ~ 8150 3550
+Wire Wire Line
+	8150 3550 8150 3950
+Wire Wire Line
+	7750 3950 8150 3950
+Connection ~ 8150 3950
+Wire Wire Line
+	8150 3950 8150 4100
+$Comp
+L pspice:C C?
+U 1 1 61C25C96
+P 6750 3000
+F 0 "C?" H 6928 3046 50  0000 L CNN
+F 1 "C" H 6928 2955 50  0000 L CNN
+F 2 "" H 6750 3000 50  0001 C CNN
+F 3 "~" H 6750 3000 50  0001 C CNN
+	1    6750 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 2750
+Wire Wire Line
+	6750 2750 6200 2750
+$Comp
+L Device:Q_NJFET_DGS Q?
+U 1 1 61C3DE63
+P 1650 4850
+F 0 "Q?" H 1841 4896 50  0000 L CNN
+F 1 "Q_NJFET_DGS" H 1841 4805 50  0000 L CNN
+F 2 "" H 1850 4950 50  0001 C CNN
+F 3 "~" H 1650 4850 50  0001 C CNN
+	1    1650 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_LED:CL220K4-G U?
+U 1 1 61C3E50C
+P 1400 4350
+F 0 "U?" H 1530 4396 50  0000 L CNN
+F 1 "CL220K4-G" H 1530 4305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 1550 4300 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005413A.pdf" H 1410 4350 50  0001 C CNN
+	1    1400 4350
+	1    0    0    -1  
+$EndComp
+Text Notes 7950 5450 0    50   ~ 0
+Test points?
+Text Notes 7950 5600 0    50   ~ 0
+Oktopart for managing BOM?
+Text Notes 7950 5750 0    50   ~ 0
+DRC from Sparkfun
+Text Notes 1050 8300 0    50   ~ 0
+When done, RUN DRC, Make mfg drawing with drill table, design notes like slots for things, , export Gerber files, open them in a gerb viewer, look at all the layers, make sure silkscreen looks good to ensure ref designators look good.
+Text Notes 7950 5950 0    50   ~ 0
+10 boards, 8 sets of parts, build 5, get 3 working.
 $EndSCHEMATC
