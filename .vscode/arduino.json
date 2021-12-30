@@ -1,7 +1,8 @@
 {
-    "board": "adafruit:nrf52:feather52840",
-    "configuration": "softdevice=s140v6,debug=l0",
-    "port": "/dev/ttyACM0",
-    "programmer": "adafruit:nrfjprog",
-    "sketch": "navtail.ino"
+  "board": "adafruit:nrf52:feather52840",
+  "configuration": "softdevice=s140v6,debug=l0",
+  "output": "firmware/build",
+  "port": "/dev/ttyACM0",
+  "programmer": "adafruit:nrfjprog",
+  "sketch": "firmware/navtail.ino"
 }
